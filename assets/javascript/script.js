@@ -1,8 +1,9 @@
-// display the current day at the top under title and subheading
+// displays the current day at the top under title and subheading
 $("#currentDay").text(moment().format("dddd, MMMM Do YYYY"));
 
 changeColor();
 // Change text area color depending on past/present/future
+// currentHour was not working correctly when in place of moment().hours() so I used moment().hours() in place of currentHour.
 var currentHour = moment().hours();
 
 function changeColor() {
@@ -85,5 +86,23 @@ if (moment().hours() > 9) {
 }if (moment().hours() === 18){
     $("#six").addClass("present");
  };
-
 };
+
+// Refreshes Page Every 15 minutes to ensure past/present/future classes are updated
+setInterval(function() {
+    location.reload();
+    console.log("page Reloaded");
+  }, 900000);
+
+// function to save 
+
+$(".savebutton").on("click", function(){
+    var comment = $(this).siblings(".commentarea").val();
+    console.log(comment);
+    var workhour = $(this).siblings(".time").text();
+    console.log(workhour);
+    localStorage.setItem(workhour, JSON.stringify(comment));
+});
+
+
+
