@@ -9,7 +9,7 @@
  - JavaScript
 
 # Screenshot
-![screenshot](workdaypic.png)
+![screenshot](![workdaypic](https://user-images.githubusercontent.com/93060262/144722217-0e4c5d0b-161d-4964-9f6d-da54d3ebdf81.png))
 
 # Link to Application:
 https://fmatthew40.github.io/work-day-scheduler/
