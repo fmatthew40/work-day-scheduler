@@ -114,7 +114,7 @@ setInterval(function() {
 
 // function to save 
 
-$(".savebutton").on("click", function(){
+$(".savebutton").on("click touchstart", function(){
     var comment = $(this).siblings(".commentarea").val();
     console.log(comment);
     var workhour = $(this).siblings(".time").text();
