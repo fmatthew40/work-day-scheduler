@@ -149,7 +149,7 @@ var elevenAm = document.getElementById('eleven');
 loadEleven();
 
 function loadTwelve() {
-twelveAm.innerText = JSON.parse(localStorage.getItem("12AM"));
+twelveAm.innerText = JSON.parse(localStorage.getItem("12PM"));
 }
 var twelveAm = document.getElementById('twelve');
 loadTwelve();
