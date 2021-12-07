@@ -64,7 +64,15 @@ body {
     border-bottom-right-radius: 15px;
     background-color: #06AED5;
     color: white;
+
+
+    z-index: 1;  
   }
+  .commentarea {
+
+  z-index: 1; 
+  }
+ 
   
   .saveBtn i:hover {
     font-size: 20px;
